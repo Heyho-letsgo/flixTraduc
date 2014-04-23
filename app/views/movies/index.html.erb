@@ -1,0 +1,8 @@
+<h1>Liste des films</h1>
+
+
+<ul>
+<% @movies.each do |m| %>
+<li><strong><%= m.titre%></strong> - <%= m.autorisation %> - <%= m.chiffre_affaire%></li>
+<% end %>
+</ul>
