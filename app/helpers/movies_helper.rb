@@ -12,7 +12,9 @@ module MoviesHelper
 
 
 	def format_description(m)
-		highlight truncate(m.description, length: 45, separator: ' ') { link_to "Continue", "#" }, 'Tony'
+		# highlight truncate(m.description, length: 45, separator: ' ') { link_to "Continue", "#" }, 'Tony'
+    highlight truncate(m.description, length: 45, separator: ' ') { link_to "Continue", controller: "movies", action: "show", id: m }, 'Tony'
+
 	end
 end
 		

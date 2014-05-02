@@ -4,6 +4,7 @@ class MoviesController < ApplicationController
 	 #@movies = ['Iron Man', 'Superman', 'Spider-Man']	
 	@movies = Movie.all
 	#@items = Movie.select("id")
+
   end
 
   def show
